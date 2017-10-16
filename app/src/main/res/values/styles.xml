@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--全屏-->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--toolbar主题-->
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--下行是设置toolbar 显示出来的menu item 字体颜色的地方，toolbar 是support的，所以不需要使用android：前缀。如果是actionbar 则加上android:前缀-->
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+    <!--主页底部导航菜单-->
+    <style name="TabMainItemStyle">
+        <item name="android:background">@color/tab_background</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/tab_text_normal</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="apTabBackground">@color/tab_background</item>
+        <item name="apTabTextSelectColor">@color/tab_text_selected</item>
+        <item name="apTabDividerColor">@android:color/transparent</item>
+        <item name="apTabShouldExpand">false</item>
+        <item name="apTabPaddingLeftRight">@dimen/tab_main_padding_left_right</item>
+        <item name="apTabPaddingTopBottom">@dimen/tab_main_padding_top_bottom</item>
+    </style>
+    <!--主页底部导航菜单字体样式-->
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+</resources>
